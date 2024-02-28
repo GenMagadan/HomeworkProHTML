@@ -6,16 +6,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Page 1</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__left">
-        <div class="header__left-brand">
+        <div class="header__left__brand">
           <img src="./images/logo/tripleB.png" alt="logo" />
-          <p class="header__left-text">BRAN<span>D</span></p>
+          <p class="header__left__brand-text">BRAN<span>D</span></p>
         </div>
-        <div class="header__left-search">
+        <div class="header__left__search">
           <div class="browse">
             Browse
             <img
@@ -23,7 +28,11 @@
               alt="caretdown"
             />
           </div>
-          <input type="text" placeholder="Search for Item..." />
+          <input
+            type="text"
+            id="search-header"
+            placeholder="Search for Item..."
+          />
           <div class="magnifying">
             <img
               src="./images/forms/magnifying.png"
@@ -33,7 +42,11 @@
         </div>
       </div>
       <div class="header__right">
-        <img src="./images/logo/basket.png" alt="basket" />
+        <img
+          class="basket-img"
+          src="./images/logo/basket.png"
+          alt="basket"
+        />
         <div class="my-account">
           My Account
           <img
@@ -43,5 +56,23 @@
         </div>
       </div>
     </header>
+    <section class="top-center">
+      <nav class="menu">
+        <a href="#">HOME</a>
+        <a href="#">MAN</a>
+        <a href="#">WOMAN</a>
+        <a href="#">KIDS</a>
+        <a href="#">ACCOSERIESE</a>
+        <a href="#">FEATURED</a>
+        <a href="#">HOT DEALS</a>
+      </nav>
+      <div class="brand-title">
+        <div class="brand-title__rectangle"></div>
+        <div class="brand-title__text">
+          <h1>THE BRAND</h1>
+          <h3>OF LUXERIOUS <span>FASHION</span></h3>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
