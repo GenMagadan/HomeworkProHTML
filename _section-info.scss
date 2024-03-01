@@ -1,6 +1,6 @@
 .section-info {
   padding: 123px 230px 89px;
-  background-color: #ffffff;
+  background-color: $colorFonOne;
   display: flex;
   gap: 64px;
   .announced {
@@ -14,31 +14,19 @@
         height: 51px;
       }
       &-text {
-        font-family: Lato, sans-serif;
-        font-size: 27px;
-        line-height: 32px;
-        font-weight: 300;
+        @include fontSource(27px, 32px, 300, 0.025em);
         text-transform: uppercase;
-        letter-spacing: 0.025em;
         color: #222222;
         span {
-          font-family: Lato, sans-serif;
-          font-size: 27px;
-          line-height: 32px;
+          @include fontSource(27px, 32px, 900, 0.025em);
           text-transform: uppercase;
-          letter-spacing: 0.025em;
-          font-weight: 900;
-          color: #f16d7f;
+          color: $colorContentTwo;
         }
       }
     }
     &__text {
-      font-family: Lato;
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 400;
-      letter-spacing: 0.025em;
-      color: #898989;
+      @include fontSource(14px, 24px, 400, 0.025em);
+      color: $colorContentSeven;
       padding-top: 29px;
     }
   }
@@ -46,24 +34,19 @@
     display: flex;
     &-list {
       h3 {
-        font-family: Lato;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 700;
-        letter-spacing: 0.025em;
-        color: #f16d7f;
+        @include fontSource(18px, 26px, 700, 0.025em);
+        color: $colorContentTwo;
         padding-right: 129px;
         padding-bottom: 42px;
         white-space: nowrap;
       }
       li {
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 42px;
-        font-weight: 400;
-        letter-spacing: 0.025em;
-        color: #898989;
         list-style-type: none;
+        a {
+          @include fontSource(16px, 42px, 400, 0.025em);
+          color: $colorContentSeven;
+          text-decoration: none;
+        }
       }
     }
   }
